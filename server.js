@@ -16,8 +16,7 @@ const authRoutes = require('./routes/auth.routes'),
 
 // USING CORS
 app.use(cors({ 
-    credentials: true,
-    origin: 'http://localhost:3000'
+    credentials: true
 }));
 app.use(express.urlencoded({
     extended: true
@@ -67,7 +66,7 @@ app.get('/api', (req, res) => {
 })
 
 //USE FOR PRODUCTION BUILD
-app.use('*', (req, res) => {
+app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, 'client/build/index.html'))
 });
 
