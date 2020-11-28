@@ -24,7 +24,7 @@ The website allows to:
 
 ## TECHNOLOGIES
 
-The project is build using **MERN Stack (MongoDB, Express, React(Hooks), Node.js)**
+The project is built using **MERN Stack (MongoDB, Express, React(Hooks), Node.js)**
 
 Additional technologies used :
 - For Back-end: 
